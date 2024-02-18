@@ -1,9 +1,3 @@
-# PACE Coding GPT Mark I
-
-Created: August 9, 2023 4:22 PM
-
-# Operative Note Generation
-
 ```python
 import warnings
 warnings.filterwarnings("ignore")
@@ -104,12 +98,11 @@ llm = HuggingFacePipeline(pipeline=lp)
 ```python
 opnote = """Operative Note
 
-SURGERY DATE:  DEIDENTIFIED PATIENT 4
+SURGERY DATE:
 
-PRE-OP DIAGNOSIS: Dehiscence of fascia [T81.30XA]
+PRE-OP DIAGNOSIS:
 
-POST-OP DIAGNOSIS: Post-Op Diagnosis Codes:
-Dehiscence of fascia [T81.30XA]
+POST-OP DIAGNOSIS:
 
 PROCEDURES PERFORMED:
 1) reopening of recent laparotomy
@@ -117,17 +110,17 @@ PROCEDURES PERFORMED:
 3) primary fascial reclosure with interrupted suture
 4) placement of Prevena vacuum-assisted wound management device
 
-SURGEON: Surgeon(s) and Role:
-DEIDENTIFIED
+SURGEON:
+
 
 ASSISTANT(S): None
 
 STAFF:
-DEIDENTIFIED
+
 
 ANESTHESIA: General
 
-INDICATION(S): DEIDENTIFIED one week s/p abdominal closure following small bowel resection now with copious salmon-colored midline wound drainage
+INDICATION(S): one week s/p abdominal closure following small bowel resection now with copious salmon-colored midline wound drainage
 
 OPERATIVE FINDINGS:
 1) small subcentimeter fascial defect just below knot with ongoing leakage responsible for clinical presentation
@@ -137,7 +130,7 @@ OPERATIVE FINDINGS:
 
 OPERATIVE REPORT:
 
-Written informed consent was garnered and the patient was taken to the operating room.  There was a gentle induction of general anesthesia with endotracheal intubation by the anesthesia provider team.  The abdomen was exposed, the staples were removed, and then the wound and skin prepped and draped in the typical sterile fashion using water-soluble prep, i.e. Hibiclens.  2 g of Ancef was provided for SSI prophylaxis and a timeout for safety was called.
+There was a gentle induction of general anesthesia with endotracheal intubation by the anesthesia provider team.  The abdomen was exposed, the staples were removed, and then the wound and skin prepped and draped in the typical sterile fashion using water-soluble prep, i.e. Hibiclens.  2 g of Ancef was provided for SSI prophylaxis and a timeout for safety was called.
 
 We reopen the prior incision and performed a careful inspection of the fascia.  There was a roughly 5 x 5 mm defect just below the knot in the fascia that was draining thin ascites.  We could find no other palpable nor visible defect.  The knot from the prior closure was still intact.  We then removed the fascial sutures and disposed of them.  We reinspected the small bowel, and found some omental adhesions which were left alone.  All inspected small bowel appeared viable, and there is no evidence of anastomotic breakdown.  We encountered substantial amount of bland ascites but no succus nor pus.  The liver appeared congested but viable, and there was no other frank abdominal pathology.  As such, we elected to trim a 12 x 12 inch Vicryl mesh to fit the defect in the fascia, and used circumferential 0 Vicryl interrupted sutures to carefully oppose this mesh to the anterior abdominal wall at roughly 4 cm intervals.  This left a synthetic, absorbable Vicryl mesh in the intraperitoneal subway position.  Satisfied with this mesh placement, we then performed a tension-free primary closure of the fascia, which was found to be viable.  We used interrupted #1 Maxon sutures in a figure-of-eight fashion to reapproximate the edges of the fascia.  The skin was closed with staples, and a Prevena incisional vacuum device was placed.  The patient was awoken from anesthesia and transferred back to the ICU in hemodynamically stable but mechanically ventilated condition.  All instrument, needle, and sponge counts were correct at the conclusion of the procedure.  Dr. DEIDENTIFIED was present for the entire procedure.
 
